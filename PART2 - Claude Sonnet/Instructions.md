@@ -4,7 +4,7 @@ Feel free to test these prompts as they are, or tweak them however you like!
 
 ## Regex
 
-- "Can you help me understand this regex pattern? r'^(?=.*?[A-Z])(?=.*?[a-z]).{10,24}$'
+- Can you help me understand this regex pattern? r'^(?=.*?[A-Z])(?=.*?[a-z]).{10,24}$'
 - Generate a regex pattern for validating an email address
 - Generate a regex pattern for validating a phone number
 
