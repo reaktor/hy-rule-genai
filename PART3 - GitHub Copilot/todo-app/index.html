@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple TODO App</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components/task.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Simple TODO App</h1>
+        </header>
+        
+        <main>
+            <form id="task-form" class="task-form">
+                <input type="text" id="task-input" placeholder="Add a new task..." required>
+                <button type="submit">Add Task</button>
+            </form>
+            
+            <div class="task-list-container"> 
+                <div id="task-list" class="task-list">
+                    <!-- Tasks will be dynamically inserted here -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/store.js"></script>
+    <script src="js/ui.js"></script>
+</body>
+</html> 
