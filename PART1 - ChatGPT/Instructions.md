@@ -1,6 +1,6 @@
 Feel free to test these prompts as they are, or tweak them however you like!
 
-# Example Prompts for Claude Sonnet
+# Example Prompts for ChatGPT
 
 ## Regex
 
