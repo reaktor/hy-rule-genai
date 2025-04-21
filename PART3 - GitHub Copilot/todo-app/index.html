@@ -19,6 +19,12 @@
                 <button type="submit">Add Task</button>
             </form>
             
+            <div class="filter-buttons">
+                <button id="filter-all" class="filter-button">All</button>
+                <button id="filter-not-done" class="filter-button">Not Done</button>
+                <button id="filter-completed" class="filter-button">Completed</button>
+            </div>
+            
             <div class="task-list-container"> 
                 <div id="task-list" class="task-list">
                     <!-- Tasks will be dynamically inserted here -->
@@ -27,7 +33,6 @@
         </main>
     </div>
 
-    <script src="js/store.js"></script>
-    <script src="js/ui.js"></script>
+    <script type="module" src="js/ui.js"></script>
 </body>
-</html> 
+</html>

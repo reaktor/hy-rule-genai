@@ -1,16 +1,17 @@
-class TaskStore {
-    constructor() {
+export default class TaskStore {
+    constructor(storage) {
         this.STORAGE_KEY = 'todo-tasks';
+        this.storage = storage || localStorage;
         this.tasks = this.loadTasks();
     }
 
     loadTasks() {
-        const tasks = localStorage.getItem(this.STORAGE_KEY);
+        const tasks = this.storage.getItem(this.STORAGE_KEY);
         return tasks ? JSON.parse(tasks) : [];
     }
 
     saveTasks() {
-        localStorage.setItem(this.STORAGE_KEY, JSON.stringify(this.tasks));
+        this.storage.setItem(this.STORAGE_KEY, JSON.stringify(this.tasks));
     }
 
     addTask(title) {
@@ -43,6 +44,8 @@ class TaskStore {
         const taskIndex = this.tasks.findIndex(task => task.id === id);
         if (taskIndex === -1) return false;
         
+        this.tasks.splice(taskIndex, 1);
+        this.saveTasks();
         return true;
     }
 
@@ -61,6 +64,3 @@ class TaskStore {
         return this.updateTask(id, { completed: !task.completed });
     }
 }
-
-// Create a singleton instance
-const taskStore = new TaskStore(); 
