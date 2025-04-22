@@ -1,5 +1,9 @@
 # hy-rule-genai
-GenAI training for developers, in collaboration with Helsingin Yliopisto
+HYRULE = Helsingin Yliopisto Reaktor Use LLMs Effectively :)
+
+GenAI training for developers, in collaboration with University of Helsinki.
+
+Below is a generic agenda for the onboarding. Your actual omboarding agenda will differ and be adjusted to your needs. Most likely there will be a slides presentation for your group's needs. Each part contains its own instructions.md file which you should follow.
 
 # Proposed Agenda
 
@@ -14,13 +18,13 @@ GenAI training for developers, in collaboration with Helsingin Yliopisto
 
 ## Part 1: ChatGPT for Developers (40 mins)
 - Introduction to ChatGPT (10 mins)
-- Examples of code prompts done in ChatGPT’s UI (10 mins) - Miko
-- Hands-on exercises (20 mins) - Miko
+- Examples of code prompts done in ChatGPT’s UI (10 mins)
+- Hands-on exercises (20 mins)
   - Generating code snippets
   - Debugging assistance
   - Writing technical documentation and comments
 
-## Part 2: Claude Sonnet for Developers (40 mins) - Christian
+## Part 2: Claude Sonnet for Developers (40 mins)
 - Introduction to Claude (5 mins)
 - Examples of code prompts done in Claude's UI (5 mins)
 - Hands-on exercises (20 mins)
@@ -29,22 +33,19 @@ GenAI training for developers, in collaboration with Helsingin Yliopisto
 - Q&A on using ChatGPT and Claude directly in their UI (10 mins)
 - Break (20 mins)
 
-## Part 3: GitHub Copilot (40 mins) - Christian
+## Part 3: GitHub Copilot (40 mins)
 - Downloading GitHub Copilot extension in VSCode (5 mins)
 - Introduction to GitHub Copilot (10 mins)
     - Autocompletion
     - Accepting/rejecting generated code
-    - Side-chat
-    - Some configurations
+    - Inline Chat and Chat View
+    - Copilot in menus and UI
 - Hands-on exercises (20 mins)
-    - Writing functions from scratch
-    - Refactoring existing code
+    - To-Do app
 - Q&A and Discussion (5 mins)
 - Break (20 mins)
 
-## Part 4: Cursor (40 mins) - Aleksi
-- Refactoring existing code
-- Q&A and Discussion (5 mins)
+## Part 4: Cursor (40 mins)
 - Downloading Cursor (5 mins)
 - Introduction to Cursor (10 mins)
     - Overview of Cursor’s capabilities for developers
@@ -53,6 +54,7 @@ GenAI training for developers, in collaboration with Helsingin Yliopisto
     - Composer/Agents
     - .cursorrules file
 - Hands-on exercise (20 mins)
+    - Calculator app
     - Similar to GitHub Copilot
 - Q&A and Discussion (5 mins)
 - Break (20 mins)
@@ -63,7 +65,8 @@ GenAI training for developers, in collaboration with Helsingin Yliopisto
     - Create a simple app from scratch (requirements provided)
     - Use AI on a personal project
 - Participants choose one of the options and 1+ AI tools presented
-- Challenge: can only use AI tools to meet requirements. Must struggle through prompting until it gets it right.
-- Wrap-Up and Closing (20 mins)
-    - Share final challenge outcomes with the group/instructor
-    - Key takeaways
+- Challenge: can only use AI tools to meet requirements. Must struggle through prompting until AI gets it right.
+
+### Wrap-up and Closing (30 mins)
+- Share final challenge outcomes with the group/instructor
+- Key takeaways
