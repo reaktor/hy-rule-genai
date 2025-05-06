@@ -71,6 +71,8 @@ The stack includes numbers and symbols, e.g. `+`, `-`, `1` etc..
 The calculator works by using postfix/RPN (Reverse Polish Notation) evaluation.
 ```
 
+Here is the RPN algorithm written in JavaScript: https://rosettacode.org/wiki/Parsing/RPN_calculator_algorithm#JavaScript
+
 Here, the output of Cursor can be different from what is shown in this guide. As LLMs tend to behave non-deterministically based on their configuration, this is completely fine.
 
 #### Create click handlers for each of the buttons
