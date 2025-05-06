@@ -15,39 +15,39 @@ In this folder, you will find a directory named `calculator-app`. It contains a 
 
 ## Tasks
 
-Your task is to implement a calculator using the help of Cursor. We will implement the following features:
+Your task is to implement a working calculator using the help of Cursor. The following features will be implemented:
 
-- Calculator operation and value stack (= how the calculator does computations)
-- Showing the calculator result on the screen
-- Click handlers for all the calculator buttons
+- 1) Calculator operation and value stack (= how the calculator does computations)
+- 2) Showing the calculator result on the screen
+- 3) Click handlers for all the calculator buttons
 
-### First task: Tab autocomplete
+### First task: Tab autocomplete with Cursor
 
 #### Create calculator state hook
 
-Open `App.tsx` and use Cursor's autocomplete ability to create a React hook for the current calculator state (= what is visible on the `calculator-value` input field)
+Open `src/App.tsx` and use Cursor's autocomplete ability to create a React hook for the current calculator state (= what is visible on the `calculator-value` input field). The calculator state is just a React hook, that can be used to set and get a string value.
 
-**Instruction:** Write `// State for calculator value` just in the beginning of `CalculatorApp` component. What do you observe?
+**Instruction:** Copy & paste `// State for calculator value, named "calculatorValue". The state is just a string value.` in the beginning of `CalculatorApp` component (Line 2). What do you observe?
 
 Pressing \[TAB\] on the suggestion creates the new React hook. (Note: It's just not yet attached into anything!)
 
-By writing the prompt as an actual code comment makes Cursor suggest you the function code as an autocomplete suggestion. Another way to generate code is to click on the place where you want to generate code and press CMD+K (Mac) on your keyboard to open the generation chat window.
+By writing the prompt as an actual code comment, Cursor suggests you the function code as an autocomplete suggestion. Another way to generate code is to click on the place where you want to generate code and press CMD+K (on Mac) on your keyboard to open the generation chat window. We also instruct cursor to name the React's useState hook as `calculatorValue` and provide a type hint (`string`).
 
 After creating the hook, you should see the following:
 
-![alt text](image1.png)
+![alt text](image-2.png)
 
 After pressing \[TAB\], our code is updated accordingly:
 
-![alt text](image2.png)
+![alt text](image-3.png)
 
-Whoa! Cursor made another suggestion for creating a click handler for a button. Unfortunately, it is not what we want next.
+Cursor suggests that you import the `useState` hook from React library. You can press TAB for it to be imported. Cursor also made another suggestion for creating a click handler for a button. Unfortunately, it is not what we want next.
 
 Next, click next to the input value of the element with the ID `calculator-value`. The following suggestion is shown:
 
-![alt text](image3.png)
+![alt text](image-4.png)
 
-Cursor intelligently understands, that we want to show the React hook's value on the read-only input field. Let's accept the suggestion once again by clicking \[TAB\].
+Cursor intelligently understands, that we want to show the React hook's value on the read-only input field. Let's accept the suggestion once again by clicking \[TAB\]. 
 
 ### Second task: Use the Chat to generate code
 
@@ -66,7 +66,7 @@ Prompt for creating the function:
 ```
 Implement a React callback hook named computeValue, which computes the calculator's current value based on the stack.
 
-The stack includes numbers and symbols.
+The stack includes numbers and symbols, e.g. `+`, `-`, `1` etc..
 
 The calculator works by using postfix/RPN (Reverse Polish Notation) evaluation.
 ```
