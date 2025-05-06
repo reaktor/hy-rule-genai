@@ -108,15 +108,17 @@ Use the following prompt to attach the event handlers:
 Attach the correct event handlers to each of the buttons (handleNumberClick, handleDecimalClick, handleOperatorClick, handleEqualsClick, handleClearClick, handleDeleteClick)
 ```
 
-After this modification, the calculator "should" work. While at it, test out the calculator between generated code to check if the feature works as it should.  Don't worry if you notice any bugs - we will fix them in the next part.
-
+After this modification, the calculator "should" work. In some cases, Cursor might create a buggy version of the `computeValue` function.
 
 #### Fix bugs using Cursor
 
-You might notice, that the calculator application is not working as expected. You might have observed the following issues:
+You can use Cursor to try and see if it can correct the bugs, by providing it some context, e.g. "When calculating 5 + 5 and pressing Equals, I'm presented with an error. Help me debug the issue.". For instance, you might observe the following issues:
 
 - Clicking a single number multiple times does not show e.g. 313
 - Clicking "=" does absolutely nothing
+- Clicking "=" shows "ERROR" and the computation is not working.
 - The UI does not update as expected.
 
-Cursor is very handy at finding and fixing bugs. Try to describe some of the bugs mentioned above to see, what kind of fixes it suggests for you.
+#### Conclusions
+
+The end! In this part, we created a functional (hopefully almost working) calculator app using Cursor's autocomplete and chat functionality. Don't worry if you didn't manage to create a working one -- it takes time to perfect the prompts. Also - as the calculator uses the RPM algorithm, the LLM can get that part wrong. Fortunately, Cursor provides an intuitive way of diagnosing and correcting bugs.
