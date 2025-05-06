@@ -2,4 +2,4 @@ Recommended: copy the calculator-app directory into a separate workspace before 
 
 # Project - Simple Calculator App
 
-TOBECOMPLETED
+Read README.md in GitHub to follow instructions along with images.
