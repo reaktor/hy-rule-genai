@@ -15,16 +15,6 @@ function CalculatorApp() {
         </div>
         
         <div className="grid grid-cols-4 gap-2">
-          <button className="bg-gray-600 text-white p-2 rounded hover:bg-gray-500">sin</button>
-          <button className="bg-gray-600 text-white p-2 rounded hover:bg-gray-500">cos</button>
-          <button className="bg-gray-600 text-white p-2 rounded hover:bg-gray-500">tan</button>
-          <button className="bg-gray-600 text-white p-2 rounded hover:bg-gray-500">√</button>
-          
-          <button className="bg-gray-600 text-white p-2 rounded hover:bg-gray-500">x²</button>
-          <button className="bg-gray-600 text-white p-2 rounded hover:bg-gray-500">π</button>
-          <button className="bg-gray-600 text-white p-2 rounded hover:bg-gray-500">e</button>
-          <button className="bg-gray-600 text-white p-2 rounded hover:bg-gray-500">^</button>
-
           <button className="bg-gray-700 text-white p-2 rounded hover:bg-gray-600">7</button>
           <button className="bg-gray-700 text-white p-2 rounded hover:bg-gray-600">8</button>
           <button className="bg-gray-700 text-white p-2 rounded hover:bg-gray-600">9</button>
