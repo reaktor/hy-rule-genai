@@ -61,7 +61,7 @@ To create the stack hook, click somewhere on the code:
 
 Here, the `"CMD+K To Generate"` opens up a chat window where the prompt can be copy-pasted.
 
-Prompt for creating the function:
+Prompt for creating the callback hook:
 
 ```
 Implement a React callback hook named computeValue, which computes the calculator's current value based on the stack.
@@ -70,6 +70,8 @@ The stack includes numbers and symbols, e.g. `+`, `-`, `1` etc..
 
 The calculator works by using postfix/RPN (Reverse Polish Notation) evaluation.
 ```
+
+Here, the output of Cursor can be different from what is shown in this guide. As LLMs tend to behave non-deterministically based on their configuration, this is completely fine.
 
 #### Create click handlers for each of the buttons
 
@@ -80,17 +82,34 @@ Prompt:
 ```
 Implement click handler functions for the following:
 
-- Handler, that adds the specified number to the calculator stack.
-- Handler, that calls computeValue hook when the `=` button is clicked
-- Handler, that clears the stack and sets the value to "0" when the "AC" button is clicked
-- Handler, that deletes the item at the current stack, when the "DEL" button is clicked
+- Handler, that adds the specified number to the calculator stack (handleNumberClick).
+- Handler, that adds the decimal separator to the stack (handleDecimalClick)
+- Handler, that adds the specified symbol (+, x, -, division) to the calculator stack (handleOperatorClick).
+- Handler, that calls computeValue hook when the `=` button is clicked (handleEqualsClick)
+- Handler, that clears the stack and sets the value to "0" when the "AC" button is clicked (handleClearClick)
+- Handler, that deletes the item at the current stack, when the "DEL" button is clicked (handleDeleteClick)
 
 Special requirements:
 
 - If a numeric button is pressed multiple times, it should modify the top-most stack item to accommodate for multiple-digit numbers
 ```
 
-While at it, test out the calculator between generated code to check if the feature works as it should.  Don't worry if you notice any bugs - we will fix them in the next part.
+#### Attach the click handlers to the buttons
+
+Highlight every button block in the calculator:
+
+![alt text](image-5.png)
+
+Here, you can already see Cursor's (CMD+K) shortcut for editing the code.
+
+Use the following prompt to attach the event handlers:
+
+```
+Attach the correct event handlers to each of the buttons (handleNumberClick, handleDecimalClick, handleOperatorClick, handleEqualsClick, handleClearClick, handleDeleteClick)
+```
+
+After this modification, the calculator "should" work. While at it, test out the calculator between generated code to check if the feature works as it should.  Don't worry if you notice any bugs - we will fix them in the next part.
+
 
 #### Fix bugs using Cursor
 
