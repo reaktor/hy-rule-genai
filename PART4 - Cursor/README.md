@@ -6,9 +6,16 @@ Cursor is an AI Code Editor, which lets you write code using instructions. It ha
 
 In this folder, you will find a directory named `calculator-app`. It contains a project skeleton for a Calculator application.
 
+## Instructions
+
+- Navigate to `calculator-app` folder
+- Open terminal
+- Run `npm install` (.nvmrc file assumes you have Node v22 installed, but you can use Node >= 18).
+- Run `npm run dev` and you are good to go! 
+
 ## Tasks
 
-Your task is to implement a calculator using the help of Cursor. We will implement the following features on this task:
+Your task is to implement a calculator using the help of Cursor. We will implement the following features:
 
 - Calculator operation and value stack (= how the calculator does computations)
 - Showing the calculator result on the screen
@@ -22,7 +29,7 @@ Open `App.tsx` and use Cursor's autocomplete ability to create a React hook for 
 
 **Instruction:** Write `// State for calculator value` just in the beginning of `CalculatorApp` component. What do you observe?
 
-Pressing \[TAB\] on the suggestion creates the new React hook. (Note: It's just yet attached into anything!)
+Pressing \[TAB\] on the suggestion creates the new React hook. (Note: It's just not yet attached into anything!)
 
 By writing the prompt as an actual code comment makes Cursor suggest you the function code as an autocomplete suggestion. Another way to generate code is to click on the place where you want to generate code and press CMD+K (Mac) on your keyboard to open the generation chat window.
 
