@@ -8,6 +8,8 @@ function CalculatorApp() {
             type="text"
             className="w-full bg-gray-700 text-right text-white text-2xl p-2 rounded"
             readOnly
+            name="calculator-value"
+            id="calculator-value"
             value="0"
           />
         </div>
