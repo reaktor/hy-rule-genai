@@ -15,3 +15,5 @@ There is a nasty bug - tasks can be completed, but not deleted.
 - New feature: reject new tasks that only contain numbers (e.g. "235", "888327"...)
 - New feature: add 3 views/filters for the TODO tasks: "Not Done", "Completed", "All". A user should be able to switch between all 3 filters
 - Add simple unit tests to the project
+- New feature: add multiple columns for tickets, create tickets in the first column by default but allow dragging tickets between columns
+- New feature: let the tickets have background colors choosable from a small selection
